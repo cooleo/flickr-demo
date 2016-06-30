@@ -1,0 +1,13 @@
+<section ng-controller="HomeController" ng-init="find()">
+  <div class="page-header">
+    <h1>Home Feeds</h1>
+  </div>
+  <div class="list-group">
+    <a ng-repeat="feed in feeds"  class="list-group-item">
+      <small class="list-group-item-text">
+        <span ng-bind="feed.title"></span>
+      </small>
+      <img ng-src="{{feed.image[0].url}}"/>
+    </a>
+  </div>
+</section>
